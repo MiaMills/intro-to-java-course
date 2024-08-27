@@ -2,6 +2,7 @@ package com.cbfacademy;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class CollectionsAssignment {
@@ -14,9 +15,27 @@ public class CollectionsAssignment {
      * @param list   - the list of integers
      * @param minValue the minimum value to retain
      */
+    
+     // Declare and inititalised a list of integers
+     List <Integer> integerList = new ArrayList<>(); {
+     number.add(12);
+     number.add(14);
+     number.add(20);
+     number.add(30);
+     number.add(72);
+     
+     }
+
     public static void removeSmallInts(List<Integer> list, int minValue) {
         // Your solution must traverse the list from last to first element
         // removing any values less than minValue.
+
+        for (int i = 0; i < integerList.size(); i++) {
+            return integerList; 
+
+        }
+        Integer min = Collections.min(integerList);
+        Integer max = Collections.max(integerList);
     }
 
     /**
@@ -26,8 +45,11 @@ public class CollectionsAssignment {
      * @param integers - a collection of integers
      * @return true if integers contains duplicates, false otherwise
      */
+
+
     public static boolean containsDuplicates(Collection<Integer> integers) {
         // Your solution must not use any loops.
+        boolean integerList = containsDuplicates(arrayList);
         return false;
     }
 
@@ -46,9 +68,32 @@ public class CollectionsAssignment {
      * @return A sorted ArrayList containing the integers that appear in either
      * collection.
      */
+
+
     public static ArrayList<Integer> inEither(Collection<Integer> ints1, Collection<Integer> ints2) {
         // This must be done with no loops.
+
+       // List 1 decleared and initialised, and elements added
+
+       Integer ints1 = new ArrayList<>();
+        ints1.add(2); 
+        ints1.add(1);
+        ints1.add(2);
+        ints1.add(3);
+
+        // List 2 decleared and initialised and elements added
+       Integer ints2 = new ArrayList<>()
+    
+       ints2.add(3);
+       ints2.add(4);
+       ints2.add(4);
+       ints2.add(5);
+
+       ArrayList<Integer> result = inEither(ints1, ints2);
+        System.out.println(result);  // Output: [2, 1, 3, 4, 5]
+
         return new ArrayList<Integer>();
+
     }
 
     /**
@@ -79,6 +124,7 @@ public class CollectionsAssignment {
      * @param list - a list of Strings
      * @return the most frequently occurring String
      */
+
     public static String mostFrequent(List<String> list) {
         // You should solve this problem in two stages: First iterate through
         // the list to count occurrences of each String. Then iterate through
